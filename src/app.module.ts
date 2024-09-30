@@ -11,6 +11,9 @@ import { ProductsController } from './products/products.controller';
 import { ProductsModule } from './products/products.module';
 import { ImagesModule } from './images/images.module';
 import { PrismaService } from './prisma/prisma.service';
+import { AuthModule } from './auth/auth.module';
+import { CartModule } from './cart/cart.module';
+import { OrderModule } from './order/order.module';
 
 @Module({
   imports: [
@@ -19,6 +22,9 @@ import { PrismaService } from './prisma/prisma.service';
     CollectionsModule,
     ProductsModule,
     ImagesModule,
+    AuthModule,
+    CartModule,
+    OrderModule,
   ],
   controllers: [AppController, CollectionsController, ProductsController],
   providers: [AppService, CollectionsService, ProductsService, PrismaService],

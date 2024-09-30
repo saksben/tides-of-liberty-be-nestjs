@@ -3,6 +3,8 @@
 /node_modules
 /build
 
+product-format.md
+
 # Logs
 logs
 *.log
